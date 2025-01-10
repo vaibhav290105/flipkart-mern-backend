@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
+  "start": "npm install --legacy-peer-deps && node index.js",
+  "build": "npm install --legacy-peer-deps && npm run build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
